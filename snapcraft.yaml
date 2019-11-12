@@ -1,0 +1,26 @@
+name: deskew
+version: "1.30"
+summary: Command line tool for deskewing scanned documents
+description: |
+  Geekbench 4 measures your system's power an
+  Deskew is a tool for deskewing scanned text documents. 
+  Deskewing is a term used for fixing the scans to get 
+  the lines of text straight. That means rotating the 
+  image of the scanned page a little to compensate 
+  for the misalignment of the paper in the scanner.
+  Deskew uses Hough transform to detect "text lines" 
+  in the image and their orientation. As an output, 
+  you get an image rotated so that the detected lines 
+  are horizontal.
+
+confinement: devmode
+base: core18
+
+parts:
+  deskew:
+    plugin: dump
+    source: deskew-1.30.tar.gz
+
+apps:
+  deskew:
+    command: deskew
