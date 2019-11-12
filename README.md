@@ -12,7 +12,7 @@ GUI also available.
 This is to make deskew as easy installable as ubuntu package or snap.
 
 
-==What I did
+# What I did
 
 1. downloaded deskew source file from https://galfar.vevb.net/wp/projects/deskew/ ( it has the binary too )
 2. Extract the binary alone from /Bin folder inside the downloaded zip file
